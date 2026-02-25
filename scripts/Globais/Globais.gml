@@ -21,9 +21,10 @@ global.fase5 = false;
 
 
 //fazendo uma posição global para os meus timers
-
-global.x_ui = 542;
+global.x_ui = 522;
 global.y_ui = 32;
+
+
 
 
 
