@@ -1,0 +1,35 @@
+
+
+
+//Globais sobre o player, para aumentar seu dano e nivel
+global.playerlevel    = 1;
+global.playerdano     = 1;
+
+global.os_meus_pontos = 0;
+
+//Globais para minhas Badges
+global.badge_olhos_de_oni = false;
+
+
+
+//Globais que indicam minha Room, e qual espirito deve aparecer até o Boss
+global.fase1 = true;
+global.fase2 = false;
+global.fase3 = false;
+global.fase4 = false;
+global.fase5 = false;
+
+
+//fazendo uma posição global para os meus timers
+
+global.x_ui = 542;
+global.y_ui = 32;
+
+
+
+
+
+
+
+
+
