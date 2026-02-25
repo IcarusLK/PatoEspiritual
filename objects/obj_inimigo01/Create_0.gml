@@ -8,8 +8,15 @@ randomise()
 vida_oni                  = 2;
 ataque_oni                = 1;
 meu_estado                = "chegando";
-velocidade_oni            = choose(2,2,2,1,3);
+velocidade_oni            = choose(2,1,1);
 velocidade_tiro_oni       = choose(2,2,2,3);
+
+
+ord_x = random_range(65,446);
+ord_y = random_range(-160,-90);
+
+x = ord_x;
+y = ord_y;
 
 
 //Variaveis para atacar.
@@ -20,6 +27,13 @@ tempo_adiciona           = 0.2;
 alvo                     = obj_player;
 
 
+
+//variaveis para efeito de sombra, so porque sim!
+tenho_sombra = false; 
+minha_sombra = 0;
+
+minha_escalaX = image_xscale;
+minha_escalaY  = image_yscale;
 
 
 
@@ -158,16 +172,17 @@ levando_dano = function()
 	if ( vida_oni <= 0 )
 	{
 		 instance_destroy();
-	};
-	
+		 instance_destroy(minha_sombra); 
+		 
 //Vendo minha chance de Drop 
-     if ( Meu_drop == 7 )
-	 {
-		  //criando maca, se meu drop é igual a 7. 
-		  instance_create_layer(x,y,"Inst_Inimigos",obj_item01_maca);
-	 }
+         if ( Meu_drop == 7 )
+	     {
+	    	  //criando maca, se meu drop é igual a 7. 
+	    	  instance_create_layer(x,y,"Inst_Inimigos",obj_item01_maca);
+	     }
 	
-	
+	};
+		
 }
 
 

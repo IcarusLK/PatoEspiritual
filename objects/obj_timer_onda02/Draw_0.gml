@@ -25,8 +25,7 @@ draw_text(global.x_ui,global.y_ui + 40,timer);
 		draw_text(room_width / 2 - 150, room_height / 2," Proxima onda em ");
 		draw_text(room_width / 2  - 70 , room_height / 2 + 20, timer_transicao);
 		
-	    draw_text(room_width / 2 - 90, room_height / 2 + 40, " ATAQUE + 1 ");
-	
+		 
 	};
 	
 	

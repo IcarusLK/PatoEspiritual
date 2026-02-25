@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_oni_tiro",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_inimigo_02",
+  "eventList":[],
   "managed":true,
-  "name":"obj_oni_tiro",
+  "name":"obj_inimigo_02",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects 04 Inimigos",
@@ -31,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_hold_tiro",
-    "path":"sprites/spr_hold_tiro/spr_hold_tiro.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

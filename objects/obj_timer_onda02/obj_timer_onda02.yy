@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_timer_onda02",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_item01_maca","path":"objects/obj_item01_maca/obj_item01_maca.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_timer_onda02",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects 01 Player and Itens",
-    "path":"folders/OBJECTS/Objects 01 Player and Itens.yy",
+    "name":"Objects 03 Timers",
+    "path":"folders/OBJECTS/Objects 03 Timers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_duck_idle",
-    "path":"sprites/spr_duck_idle/spr_duck_idle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

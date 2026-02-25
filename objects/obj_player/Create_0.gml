@@ -2,10 +2,11 @@
 
 #region variaveis 
 //iniciando variaveis de estados
-velocidade    = 2; 
-vida          = 2;
-meu_estado    = 0;
-indica_estado = 0;
+velocidade      = 2; 
+vida            = 2;
+meu_estado      = 0;
+indica_estado   = 0;
+velocidade_tiro = 2;
 
 //iniciando variaveis de input
 right         = 0;
@@ -15,6 +16,13 @@ down          = 0;
 movex         = 0;
 movey         = 0;
 atira         = 0;
+
+
+//variaveis para o tiro 
+posso_atirar   = true;
+tempo_atirar   = 3;
+timer_atirar   = 0;
+tempo_adiciona = 0.1
 
 
 //pegando os meus colisores, apesar de que devido á mudança de formato, nem vai ser tão 
@@ -46,6 +54,13 @@ move_player = function()
 	movey = (down  - up  ) * velocidade
 	
 	move_and_collide(movex,movey,colisores)
+
+//Fazendo o Player atirar	
+	if (atira)
+	{
+		 atirando(); 
+		 posso_atirar = false;
+	}
 	
 	
 }
@@ -102,7 +117,43 @@ estado_andando = function()
 	
 };
 
+//Atirando nos inimigos muhahaa
+atirando = function()
+{	
+	
+//Se posso atirar eu atiro
+	if (posso_atirar)
+   {  
+   //vendo qmeu criador
+       var origem = obj_gun;
+     
+     //criando tiro e definindo direçao e velocidade. 
+       var tiro   = instance_create_layer(origem.x,origem.y,"Inst_tiros",obj_tiro_player)
+       tiro.direction = origem.direction
+       tiro.speed     = velocidade_tiro;
+   };
+	
+}; 
 
+
+	//dando um tempo de CoolDown no meu tiro. 
+limitando_tiro = function()
+{
+	if (!posso_atirar)
+	{
+		timer_atirar += tempo_adiciona;
+				
+	}
+	   
+	if (timer_atirar >= tempo_atirar)
+	{
+		 timer_atirar = 0;
+		 posso_atirar = true;
+		
+	};
+	
+	
+}
 
 
 #endregion 

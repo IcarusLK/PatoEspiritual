@@ -7,6 +7,9 @@ global.playerdano     = 1;
 
 global.os_meus_pontos = 0;
 
+//variavel para parar gerador
+global.parar_gerador = false;
+
 //Globais para minhas Badges
 global.badge_olhos_de_oni = false;
 
