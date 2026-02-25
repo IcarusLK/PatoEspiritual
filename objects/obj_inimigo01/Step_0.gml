@@ -29,7 +29,7 @@ if (tenho_sombra)
  image_xscale = lerp(image_xscale,minha_escalaX,0.2)
  image_yscale = lerp(image_yscale,minha_escalaY,0.3)
  
- 
+
  
  
  

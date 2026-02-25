@@ -193,3 +193,11 @@ levando_dano = function()
 
 
 
+
+
+
+
+
+
+
+
