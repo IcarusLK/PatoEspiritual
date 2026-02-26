@@ -179,14 +179,14 @@ leva_dano = function(valor_de_dano)
 
 //resetando o jogo
 
-resetou = function()
+reseta = function()
 {	   
-	   reseta = keyboard_check_pressed(ord("R"));
+	   reseta = keyboard_check_pressed(vk_left);
 	   
 	   if (reseta)
 	   {
 		   global.resetou = true; 
-		   //show_message("foi")
+		   show_message("foi")
 	   };
 	   	
 }

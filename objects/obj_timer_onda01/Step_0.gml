@@ -49,7 +49,13 @@
 		instance_destroy()
 	}
  
+    //resetando o timer  
+ if (global.resetou)
  
+   {
+	   timer = 50;
+	  	   
+   }; 
  
  
  

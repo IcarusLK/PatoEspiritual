@@ -11,10 +11,10 @@ vspeed = clamp(vspeed,-1,2);
 //criando um efeito de sombra
 if (!tenho_sombra)
 {
-	 minha_sombra = instance_create_layer(x,y+10,"Inst_Inimigos",obj_sombra); 
-	 tenho_sombra  = true;
+	 minha_sombra = instance_create_layer(x,y+10,"Inst_sombras",obj_sombra); 
 	 minha_sombra.image_xscale = 0.7;
 	 minha_sombra.image_yscale = 0.7;
+	 tenho_sombra  = true;
 }
 
 if (tenho_sombra)

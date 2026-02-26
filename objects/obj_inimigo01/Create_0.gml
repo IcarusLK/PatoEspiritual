@@ -12,6 +12,8 @@ velocidade_oni            = choose(2,1,1);
 velocidade_tiro_oni       = choose(2,2,2,3);
 
 
+//fazendo minha origem ser aleatoria dentro desses
+//valores
 ord_x = random_range(65,446);
 ord_y = random_range(-160,-90);
 

@@ -16,18 +16,23 @@ global.badge_olhos_de_oni = false;
 
 
 //Globais que indicam minha Room, e qual espirito deve aparecer até o Boss
-global.fase1 = true;
-global.fase2 = false;
-global.fase3 = false;
-global.fase4 = false;
-global.fase5 = false;
+global.fase1      = true;
+global.fase2      = false;
+global.fase3      = false;
+global.fase4      = false;
+global.fase5      = false;
 
 
 //fazendo uma posição global para os meus timers
-global.x_ui = 522;
-global.y_ui = 32;
+global.x_ui       = 522;
+global.y_ui       = 32;
 
 
+//global para saber se o jogo deve resetar
+
+//vendo se o player morreuu
+global.morreu     = false;
+global.resetou    = false;
 
 
 

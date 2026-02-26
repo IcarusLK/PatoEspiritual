@@ -10,6 +10,12 @@ meu_estado();
 //Limitando meu tiro
 limitando_tiro();
 
+
+resetou();
+
+cursor_sprite = spr_mira; 
+
+
 //aumentando meu nivel de ataque de acordo com as fases, e eventualmente mudando o sprite
 //do meu tiro.
 
@@ -18,10 +24,3 @@ limitando_tiro();
   {
 	  global.playerdano = 2;
   }
-
-
-
-
-
-
-

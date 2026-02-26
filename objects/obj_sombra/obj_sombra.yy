@@ -9,8 +9,8 @@
   "name":"obj_sombra",
   "overriddenProperties":[],
   "parent":{
-    "name":"sprites_auxiliares",
-    "path":"folders/SPRITES/sprites_auxiliares.yy",
+    "name":"Objects 04 Inimigos",
+    "path":"folders/OBJECTS/Objects 04 Inimigos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
