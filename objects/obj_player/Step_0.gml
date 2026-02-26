@@ -24,3 +24,19 @@ cursor_sprite = spr_mira;
   {
 	  global.playerdano = 2;
   }
+  
+  //fase 2 aumento 1 de dano. 
+  if ( global.fase3)
+  {
+	  global.playerdano = 4;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

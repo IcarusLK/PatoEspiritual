@@ -20,7 +20,7 @@
 	
  }; 
  //se o gerador parou é pq o timer zerou, confirmo se tem instancias e aviso a proxima onda
-   if (global.parar_gerador and !instance_exists(obj_inimigo02) and !instance_exists(obj_gerador02))
+   if (global.parar_gerador and !instance_exists(obj_inimigo03) and !instance_exists(obj_gerador03))
    {   
 	  escrevendo_transicao = true;
    }
@@ -42,9 +42,8 @@
 //a fase 1 fica para tras vamos para a proxima	   
 	    global.fase1 = false;
 		global.fase2 = false;
-		global.fase3 = true;
-		
-		instance_destroy()
+		global.fase3 = false;
+		global.fase4 = true; 
 	}
  
  //resetando o timer  

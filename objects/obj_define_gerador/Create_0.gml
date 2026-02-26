@@ -11,3 +11,4 @@ geradorfase02  = 0;
 //vendo se criei geradores.
 gerador1 = false;
 gerador2 = false;
+gerador3 = false;

@@ -17,4 +17,17 @@ if (global.fase1 and !gerador1)
 //reiniciando o outro gerador so por precaucao, nao sei se vai gerar erros	 
 	 gerador1       = false;
    } 
+   
+     //criando  o gerador da fase23
+ if (global.fase3 and !gerador3)
+   {
+  	  geradorfase02 = instance_create_layer(x,y,"Inst_Inimigos",obj_gerador03)	
+  	  gerador3      = true
+	 
+//reiniciando o outro gerador so por precaucao, nao sei se vai gerar erros	 
+	 gerador1       = false;
+	 gerador2       = false;
+   } 
+   
+   
   

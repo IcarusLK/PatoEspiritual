@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tiro_player",
+  "%Name":"obj_inimigo03__tiro",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_tiro_player",
+  "name":"obj_inimigo03__tiro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects 01 Player and Itens",
-    "path":"folders/OBJECTS/Objects 01 Player and Itens.yy",
+    "name":"SPRITES 01",
+    "path":"folders/SPRITES/SPRITES 01.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tiro_player_hold",
-    "path":"sprites/spr_tiro_player_hold/spr_tiro_player_hold.yy",
+    "name":"spr_boquinha_tiro",
+    "path":"sprites/spr_boquinha_tiro/spr_boquinha_tiro.yy",
   },
   "spriteMaskId":null,
   "visible":true,
