@@ -175,6 +175,7 @@ atirando = function()
        var tiro   = instance_create_layer(origem.x,origem.y,"Inst_tiros",obj_tiro_player)
        tiro.direction = origem.direction
        tiro.speed     = velocidade_tiro;
+	  
    };
 	
 }; 

@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hold_maca",
-    "path":"sprites/spr_hold_maca/spr_hold_maca.yy",
+    "name":"spr_maca",
+    "path":"sprites/spr_maca/spr_maca.yy",
   },
   "spriteMaskId":null,
   "visible":true,

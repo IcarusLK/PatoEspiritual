@@ -8,8 +8,8 @@
   "name":"obj_testa_texto",
   "overriddenProperties":[],
   "parent":{
-    "name":"PatoEspiritual",
-    "path":"PatoEspiritual.yyp",
+    "name":"Objects 02 Auxiliares",
+    "path":"folders/OBJECTS/Objects 02 Auxiliares.yy",
   },
   "parentObjectId":null,
   "persistent":false,

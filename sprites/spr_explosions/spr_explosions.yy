@@ -33,8 +33,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"PatoEspiritual",
-    "path":"PatoEspiritual.yyp",
+    "name":"SPRITES 02 Inimigos",
+    "path":"folders/SPRITES/SPRITES 02 Inimigos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

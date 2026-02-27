@@ -31,12 +31,14 @@ cursor_sprite = spr_mira;
   if ( global.fase2 )
   {
 	  global.playerdano = 2;
+	  velocidade_tiro   = 2.5;
   };
   
   //fase 2 aumento 1 de dano. 
   if ( global.fase3)
   {
 	  global.playerdano = 4;
+	  velocidade_tiro   = 2.7;
   };
   
   if ( global.fase4 )
