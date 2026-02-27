@@ -26,4 +26,17 @@ if (tenho_sombra)
   minha_sombra.x = x; 
   minha_sombra.y = y + 30;
  
-}
+};
+
+
+ //parando se o player morreu
+ 
+ if (global.morreu)
+ {
+	  vspeed = 0;
+	  hspeed = 0;
+ };
+
+
+
+

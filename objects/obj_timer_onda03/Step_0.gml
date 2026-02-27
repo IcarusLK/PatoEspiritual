@@ -44,6 +44,7 @@
 		global.fase2 = false;
 		global.fase3 = false;
 		global.fase4 = true; 
+		instance_destroy()
 	}
  
  //resetando o timer  

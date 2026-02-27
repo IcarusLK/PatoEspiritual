@@ -18,6 +18,7 @@ timer_inimigo_03_atirar  = 0;
 velocidade_tiro_boquinha = choose(2,2,3);
 alvo                     = obj_player;
 tiro1                    = 0;
+drop                     = choose(1,2,3,4,5,6,7,7);
 
 //Estados
 Inimigo_03_estado        = "chegando";
@@ -62,6 +63,12 @@ inimigo_03_Machina  = function()
 		   
 		   case "chegando" : 
 		   
+		    if (global.morreu)
+			  {
+				   Inimigo_03_estado = "parei"
+			  }
+		   
+		   
 		   vspeed = velocidade_de_boquinha;
 		   
 		   if ( y >= 41 )
@@ -72,6 +79,11 @@ inimigo_03_Machina  = function()
 		   break;
 		   
 		   case "parado"   :
+		   
+		    if (global.morreu)
+			  {
+				   Inimigo_03_estado = "parei"
+			  }
 		   
 		   vspeed = 0;
 		   timer_parado += 0.1;
@@ -84,6 +96,12 @@ inimigo_03_Machina  = function()
 		   break;
 		   
 		   case "atirando" :
+		   
+		    if (global.morreu)
+			  {
+				   Inimigo_03_estado = "parei"
+			  }
+		   
 		   
 		   sprite_index = spr_boquinha_ataca;
 		   image_index  = 1;
@@ -103,6 +121,11 @@ inimigo_03_Machina  = function()
 		   
 		   case "andando" :
 		   	 
+			  if (global.morreu)
+			  {
+				   Inimigo_03_estado = "parei"
+			  }
+			 
 			 sprite_index = spr_boquinha;
 			 image_speed  = 1;
 			//mudando a direção
@@ -137,6 +160,13 @@ inimigo_03_Machina  = function()
 		   
 		   break;
 		   
+		   case "parei" : 
+		   vspeed = 0;
+		   hspeed = 0;
+		   sprite_index = spr_boquinha;
+		   image_index  = 0;
+		   
+		   break;
 		   
 	   }//fecha Swicth
 	   
@@ -200,9 +230,15 @@ leva_dano = function()
 	   vida -= global.playerdano
 	   
 	   if ( vida <= 0 )
-	   {
+	   {    
+		   
 		   instance_destroy(); 
 		   instance_destroy(minha_sombra);
+		   
+		   if (drop == 7)
+		   {
+		       instance_create_layer(x,y + 15,"Inst_tiros",obj_item01_maca);
+		   }
 	   }
 	  	
 }

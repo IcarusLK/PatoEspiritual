@@ -29,5 +29,13 @@ if (global.fase1 and !gerador1)
 	 gerador2       = false;
    } 
    
+   if (global.fase4 and !gerador4)
+   {
+	    geradorfase04 = instance_create_layer(x,y,"Inst_Inimigos",obj_gerador04);
+		gerador4      = true;
+		gerador1      = false;
+	    gerador2      = false;
+		gerador3      = false
+   }
    
   

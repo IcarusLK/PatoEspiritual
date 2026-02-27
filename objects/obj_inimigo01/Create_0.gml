@@ -77,6 +77,12 @@ machina = function()
 		   meu_estado = "atacando"	;	 
 		 }; // fecha If 
 		 
+		  if (global.morreu)
+		 {
+			  meu_estado = "parei";
+		 };
+		 
+		 
 		 break;
 		 
 		 case "atacando" : 
@@ -97,6 +103,11 @@ machina = function()
 			  meu_estado  = "andando";
 		 } 
 		 
+		 if (global.morreu)
+		 {
+			  meu_estado = "parei";
+		 };
+		 
 		 break; 
 		 
 		 case "andando" :
@@ -114,8 +125,19 @@ machina = function()
 			  meu_estado  = "atacando";
 		 }
 		 
+		 if (global.morreu)
+		 {
+			  meu_estado = "parei";
+		 };
+		 
 		 break; 
-	
+		 
+		 case "parei"   :
+		 
+		 vspeed  = 0;
+		 hspeed  = 0;
+		 
+		 break; 
 		 
 	 }// Fecha Switch
 	
@@ -180,7 +202,7 @@ levando_dano = function()
          if ( Meu_drop == 7 )
 	     {
 	    	  //criando maca, se meu drop é igual a 7. 
-	    	  instance_create_layer(x,y,"Inst_Inimigos",obj_item01_maca);
+	    	  instance_create_layer(x,y + 10,"Inst_Inimigos",obj_item01_maca);
 	     }
 	
 	};

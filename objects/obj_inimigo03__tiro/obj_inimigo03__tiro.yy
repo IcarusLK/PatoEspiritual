@@ -8,8 +8,8 @@
   "name":"obj_inimigo03__tiro",
   "overriddenProperties":[],
   "parent":{
-    "name":"SPRITES 01",
-    "path":"folders/SPRITES/SPRITES 01.yy",
+    "name":"Objects 04 Inimigos",
+    "path":"folders/OBJECTS/Objects 04 Inimigos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

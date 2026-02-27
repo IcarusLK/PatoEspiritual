@@ -10,8 +10,8 @@
   "name":"obj_gerador03",
   "overriddenProperties":[],
   "parent":{
-    "name":"PatoEspiritual",
-    "path":"PatoEspiritual.yyp",
+    "name":"Objects 05 Geradores",
+    "path":"folders/OBJECTS/Objects 05 Geradores.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,6 +11,7 @@ alvo                   = obj_player;
 dano_de_fantasma       = 2; 
 
 estado_de_fantasma     =  "Aproximando";
+drop                   = choose(1,2,3,4,5,6,7,7);
 
 //variaveis para efeito de sombra, so porque sim!
 tenho_sombra           = false; 
@@ -84,8 +85,14 @@ recebe_dano_aumenta_velocidade = function()
 	  {
 		   instance_destroy();
 		   instance_destroy(minha_sombra);
+		   
+		   if ( drop == 7 )
+		   {
+			   instance_create_layer(x,y + 15,"Inst_tiros",obj_item01_maca);   
+		   }
 		  
 	  }
+	
 	
 	
 }

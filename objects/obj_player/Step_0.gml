@@ -10,10 +10,18 @@ meu_estado();
 //Limitando meu tiro
 limitando_tiro();
 
-
+//resetando o game
 resetou();
 
+//tempo cooldown
+volta_dano(); 
+
+//Mudando o meu cursor, seria bom ter um objeto para isso, mas enfim
 cursor_sprite = spr_mira; 
+
+//consertando minha escala 			  
+			  image_xscale = lerp(image_xscale,minha_X,0.2)
+			  image_yscale = lerp(minha_Y,image_yscale,0.2)
 
 
 //aumentando meu nivel de ataque de acordo com as fases, e eventualmente mudando o sprite
@@ -23,15 +31,30 @@ cursor_sprite = spr_mira;
   if ( global.fase2 )
   {
 	  global.playerdano = 2;
-  }
+  };
   
   //fase 2 aumento 1 de dano. 
   if ( global.fase3)
   {
 	  global.playerdano = 4;
+  };
+  
+  if ( global.fase4 )
+  {
+	  global.playerdano = 5;
+  };
+  
+  if (global.fase5)
+  {
+	  global.playerdano = 7;
+	  
+  }; 
+ 
+ //caso a arma nao exista
+  if (!instance_exists(obj_gun) and !global.morreu)
+  {
+	   instance_create_layer(x,y,"Inst_player",obj_gun)
   }
-  
-  
   
   
   

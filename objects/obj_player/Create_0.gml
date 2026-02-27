@@ -2,32 +2,45 @@
 
 #region variaveis 
 //iniciando variaveis de estados
-velocidade      = 2; 
-vida            = 3;
-meu_estado      = 0;
-indica_estado   = 0;
-velocidade_tiro = 2;
+velocidade          = 2; 
+vida                = 3;
+meu_estado          = 0;
+indica_estado       = 0;
+velocidade_tiro     = 2;
 
 //iniciando variaveis de input
-right         = 0;
-left          = 0;
-up            = 0;
-down          = 0;
-movex         = 0;
-movey         = 0;
-atira         = 0;
+right               = 0;
+left                = 0;
+up                  = 0;
+down                = 0;
+movex               = 0;
+movey               = 0;
+atira               = 0;
 
 
 //variaveis para o tiro 
-posso_atirar   = true;
-tempo_atirar   = 3;
-timer_atirar   = 0;
-tempo_adiciona = 0.1
+posso_atirar        = true;
+tempo_atirar        = 3;
+timer_atirar        = 0;
+tempo_adiciona      = 0.1
 
+//Levar dano
+posso_levar_dano    = true;
+tempo_cooldown_dano = 17;
+timer_cooldown      = 0;
 
 //pegando os meus colisores, apesar de que devido á mudança de formato, nem vai ser tão 
 //preciso necessariamnte
 colisores = [obj_parede];
+
+//Efeitos 
+minha_X = image_xscale;
+minha_Y = image_yscale;
+
+
+
+
+
 
 #endregion 
 
@@ -89,6 +102,13 @@ estado_idle    = function()
 		 meu_estado = estado_andando;
 	}
 	
+	if ( vida <= 0 )
+	{
+		 
+		 meu_estado = estado_morto;
+	}
+	
+	
 }
 
  
@@ -114,8 +134,32 @@ estado_andando = function()
 		  meu_estado = estado_idle;
 		  
 	  };
+	  
+	  if ( vida <= 0 )
+	{
+		 vida = 0;
+		 meu_estado = estado_morto;
+	}
+	
 	
 };
+
+
+estado_morto = function()
+{
+	 vspeed = - 0.2
+	 
+	 vida = 0;
+	 posso_atirar       = false;
+	 global.morreu      = true;
+	 posso_levar_dano   = false;
+	 sprite_index       = spr_duck_dead;
+	 if (instance_exists(obj_gun) and global.morreu)
+	 {
+          instance_destroy(obj_gun);		 
+	 }
+	
+}
 
 //Atirando nos inimigos muhahaa
 atirando = function()
@@ -172,10 +216,27 @@ meu_estado = estado_idle;
 //recebendo dano
 leva_dano = function(valor_de_dano)
 {
-	
+	if (posso_levar_dano)
+	{
 	   vida -= valor_de_dano; 
+	   posso_levar_dano = false;
+	}; 
+	
+	comeca_efeito(3.7,0.09,0.5)
+	
 	
 }; 
+
+leva_dano_sem_efeito = function(valor_de_dano)
+{
+	if (posso_levar_dano)
+	{
+	   vida -= valor_de_dano; 
+	   posso_levar_dano = false;
+	}; 
+		
+};
+
 
 //resetando o jogo
 
@@ -191,6 +252,23 @@ resetou = function()
 	   	
 }
 
+volta_dano = function()
+         {
+         	 if (!posso_levar_dano)
+			 {
+				 timer_cooldown += 0.1;			
+				 
+			 };
+			 
+		
+		if (timer_cooldown >= tempo_cooldown_dano)
+		{
+			 timer_cooldown   = 0;
+			 posso_levar_dano = true;
+		}
+			 
+         	
+  };//Fechan Function
 
 
 #endregion 

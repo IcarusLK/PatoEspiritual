@@ -24,6 +24,15 @@ if (tenho_sombra)
   //criando efeito
  image_xscale = lerp(image_xscale,minha_escalaX,0.2)
  image_yscale = lerp(image_yscale,minha_escalaY,0.3)
+ 
+ 
+ //parando se o player morreu
+ 
+ if (global.morreu)
+ {
+	  vspeed = 0;
+	  hspeed = 0;
+ };
 
 
 
