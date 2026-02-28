@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sprite_cursor",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_cutscene02",
+  "eventList":[],
   "managed":true,
-  "name":"obj_sprite_cursor",
+  "name":"obj_cutscene02",
   "overriddenProperties":[],
   "parent":{
-    "name":"MENU",
-    "path":"folders/BOTOES/MENU.yy",
+    "name":"PatoEspiritual",
+    "path":"PatoEspiritual.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

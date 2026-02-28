@@ -2,4 +2,5 @@
 
 
 draw_self();
-draw_text(50,200,meu_estado)
+/*
+draw_text(50,200,meu_estado)*/

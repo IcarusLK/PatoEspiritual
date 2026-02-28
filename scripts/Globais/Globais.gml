@@ -38,6 +38,8 @@ global.y_ui       = 32;
 global.morreu     = false;
 global.resetou    = false;
 
+global.cutscene   = false;
+
 
 
 

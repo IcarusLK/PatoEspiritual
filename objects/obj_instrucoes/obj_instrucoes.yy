@@ -8,8 +8,8 @@
   "name":"obj_instrucoes",
   "overriddenProperties":[],
   "parent":{
-    "name":"BOTOES",
-    "path":"folders/BOTOES.yy",
+    "name":"MENU",
+    "path":"folders/BOTOES/MENU.yy",
   },
   "parentObjectId":null,
   "persistent":false,

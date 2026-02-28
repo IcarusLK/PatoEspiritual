@@ -8,8 +8,8 @@
   "name":"obj_titulo",
   "overriddenProperties":[],
   "parent":{
-    "name":"PatoEspiritual",
-    "path":"PatoEspiritual.yyp",
+    "name":"BOTOES",
+    "path":"folders/BOTOES.yy",
   },
   "parentObjectId":null,
   "persistent":false,
