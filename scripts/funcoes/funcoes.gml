@@ -20,3 +20,19 @@ function comeca_efeito(valorx,valory,qua)
 	
 	
 }
+
+function toca_som(sound,valor1,loop,gain,off,pitch)
+{
+	
+	 audio_play_sound(sound,valor1,loop,gain,off,pitch);
+}
+
+
+
+
+
+
+
+
+
+

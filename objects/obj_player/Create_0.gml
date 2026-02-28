@@ -169,12 +169,22 @@ atirando = function()
 	if (posso_atirar)
    {  
    //vendo qmeu criador
-       var origem = obj_gun;
+   if (instance_exists(obj_gun))
+   
+    {    
+	   var origem = obj_gun;
      
      //criando tiro e definindo direçao e velocidade. 
        var tiro   = instance_create_layer(origem.x,origem.y,"Inst_tiros",obj_tiro_player)
        tiro.direction = origem.direction
        tiro.speed     = velocidade_tiro;
+	   
+	   if (tiro)
+	   {     
+		   var valor_som = (random_range(1.7,3));
+		   toca_som(snd_shot,1,0, , ,valor_som);
+	   }
+     }
 	  
    };
 	

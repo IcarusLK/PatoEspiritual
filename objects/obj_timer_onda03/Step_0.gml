@@ -23,6 +23,13 @@
    if (global.parar_gerador and !instance_exists(obj_inimigo03) and !instance_exists(obj_gerador03))
    {   
 	  escrevendo_transicao = true;
+	  global.badge_boquinha = true;
+	  
+	  if (!toquei)
+	  {
+		  audio_play_sound(snd_badge,1,0); 
+		  toquei = true;
+	  }
    }
  
  

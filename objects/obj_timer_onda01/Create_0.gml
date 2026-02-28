@@ -7,6 +7,9 @@ tempo_para_zerar_room01 = 0;
 //fazendo uma variavel do player só pra facilitar a escrita e leitura; 
 player = 0; 
 
+//Para tocar o som
+toquei = false; 
+
 //Para indicar o Timer da minha transição; 
 escrevendo_transicao = false; 
 

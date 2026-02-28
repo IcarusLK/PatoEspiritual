@@ -38,6 +38,8 @@ voltando                 = false;
 minha_escalaX            = image_xscale;
 minha_escalaY            = image_yscale;
 
+valor_som = random_range(0.7,2)
+
 //fazendo minha origem ser aleatoria dentro desses
 //valores
 ord_x = random_range(65,446);

@@ -12,6 +12,9 @@ global.parar_gerador = false;
 
 //Globais para minhas Badges
 global.badge_olhos_de_oni = false;
+global.badge_fantasmao    = false;
+global.badge_boquinha     = false;
+global.badge_diamantinho  = false;
 
 
 

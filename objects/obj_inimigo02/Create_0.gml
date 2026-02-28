@@ -13,6 +13,8 @@ dano_de_fantasma       = 2;
 estado_de_fantasma     =  "Aproximando";
 drop                   = choose(1,2,3,4,5,6,7,7);
 
+valor_som = random_range(0.7,2)
+
 //variaveis para efeito de sombra, so porque sim!
 tenho_sombra           = false; 
 minha_sombra           = 0;

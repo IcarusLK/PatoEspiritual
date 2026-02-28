@@ -10,6 +10,9 @@ player = 0;
 //Para indicar o Timer da minha transição; 
 escrevendo_transicao = false; 
 
+//para o som
+toquei = false;
+
 //Timer para a minha transição
 timer_transicao = 15;
 tempo_para_minha_transicao = 0;

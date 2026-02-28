@@ -23,6 +23,13 @@
    if (global.parar_gerador and !instance_exists(obj_inimigo01))
    {   
 	  escrevendo_transicao = true;
+	  global.badge_olhos_de_oni = true;
+	  
+	  if (!toquei)
+	  {
+		  audio_play_sound(snd_badge,1,0)
+		  toquei = true; 
+	  }
    }
  
  
