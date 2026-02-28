@@ -21,6 +21,9 @@
 	  
 	  //volta gerador
 	  global.parar_gerador   = false;
+	  
+	  //Para cutscene
+	  global.cutscene = false;
 	   
 	   //reseta badges
 	  global.badge_olhos_de_oni = false;

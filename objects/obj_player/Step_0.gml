@@ -60,19 +60,25 @@ cursor_sprite = spr_mira;
   
   
   //tentando fazer um efeito de sei la, ele vai voltar ao mundo normal
-  if (obj_desenha_ui.escreve_final == true)
+  if (obj_desenha_ui.escreve_final == true and instance_exists(obj_gun) )
   {
-	      image_alpha -= 0.03;
-		  obj_gun.image_alpha -= 0.03;
+	      image_alpha -= 0.01;
+		  obj_gun.image_alpha -= 0.01;
   }
   
-  else if (!obj_desenha_ui.escreve_final)
+  else if (!obj_desenha_ui.escreve_final and instance_exists(obj_gun))
   {
 	     image_alpha = 1;
 		 obj_gun.image_alpha = 1;
   }
   
-  
+ //Iniciando a minha "CUTSCENE"
+ 
+ if (image_alpha <= 0)
+ {
+	  global.cutscene = true;
+	  
+ }
   
   
   

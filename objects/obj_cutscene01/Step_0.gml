@@ -8,7 +8,7 @@ if  (keyboard_check_released(vk_space) and cena1)
      }
      if (cena2)
      {  
-		 
+		  saltar  = true;
 		 //Adicionando um timer para ver quando posso mudar de cena
      	 sprite_index = spr_testa_cutscene_1
 		 timer_mudar += 0.3;

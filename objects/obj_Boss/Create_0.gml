@@ -6,7 +6,7 @@ randomise()
 
 meu_punho                      = false;;
 
-vida_de_boss                   = 390;
+vida_de_boss                   = 490;
 atk_de_boss                    = 3;
 velocidade_h_boss              = 2;
 posso_levar_dano_boss          = false;

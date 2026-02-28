@@ -39,8 +39,10 @@ if (global.badge_diamantinho)
 {
 	draw_sprite_ext(spr_estrela_amigavel,1,585,232,1.5,1.5,0,c_white,1)
 }	
-
-
+if (global.boss)
+{
+  draw_sprite_ext(spr_estrela_amigavel,1,555,282,1.9,1.9,0,c_white,1)
+};
 //mensagem de morrer
 
 if (global.morreu)

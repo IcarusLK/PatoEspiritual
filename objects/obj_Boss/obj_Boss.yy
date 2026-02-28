@@ -12,8 +12,8 @@
   "name":"obj_Boss",
   "overriddenProperties":[],
   "parent":{
-    "name":"PatoEspiritual",
-    "path":"PatoEspiritual.yyp",
+    "name":"Objects 04 Inimigos",
+    "path":"folders/OBJECTS/Objects 04 Inimigos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

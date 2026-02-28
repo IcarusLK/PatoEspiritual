@@ -11,3 +11,5 @@ timer_mudar = 0;
 timer_jogar = 0;
 posso_mudar = false
 posso_jogar = false;
+
+saltar      = false;
