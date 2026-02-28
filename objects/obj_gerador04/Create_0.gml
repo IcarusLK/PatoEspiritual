@@ -7,7 +7,7 @@ espirito = obj_inimigo04
 
 
 //definindo meu tempo  e coordenadas
-escolha_tempo = choose(120,200,200,300);
+escolha_tempo = choose(120,120,200,200,300);
 
 
 //definindo quando posso criar os inimigos

@@ -33,7 +33,25 @@
 
 };
 
+  //finalizando o jogo
+if (global.boss)
+{
+	timer += 0.07
+	
+}
 
+  if (timer >= tempo)
+  {      
+	    timer = 0;
+	    escreve_final = true; 
+  }
+  
+  //RESETANDO LAALAALLAA 
+  if (global.resetou)
+ {
+	   timer = 0;
+	   
+ }
 
 
 

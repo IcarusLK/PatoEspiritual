@@ -43,12 +43,12 @@ cursor_sprite = spr_mira;
   
   if ( global.fase4 )
   {
-	  global.playerdano = 5;
+	  global.playerdano = 6;
   };
   
   if (global.fase5)
   {
-	  global.playerdano = 7;
+	  global.playerdano = 8;
 	  
   }; 
  
@@ -58,6 +58,19 @@ cursor_sprite = spr_mira;
 	   instance_create_layer(x,y,"Inst_player",obj_gun)
   }
   
+  
+  //tentando fazer um efeito de sei la, ele vai voltar ao mundo normal
+  if (obj_desenha_ui.escreve_final == true)
+  {
+	      image_alpha -= 0.03;
+		  obj_gun.image_alpha -= 0.03;
+  }
+  
+  else if (!obj_desenha_ui.escreve_final)
+  {
+	     image_alpha = 1;
+		 obj_gun.image_alpha = 1;
+  }
   
   
   

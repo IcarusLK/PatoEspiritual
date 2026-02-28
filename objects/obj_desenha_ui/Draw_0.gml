@@ -41,7 +41,21 @@ if (global.badge_diamantinho)
 }	
 
 
+//mensagem de morrer
 
+if (global.morreu)
+{
+	draw_set_font(fnt_02_transicao)
+	draw_text(room_width/2 - 90, room_height/2,"MORREU!");
+	draw_text(room_width/2 - 210, room_height/2 + 30, "PRESSIONE R PARA REINICIAR");
+	
+}; 
+
+   if (escreve_final)
+   {
+	     draw_text(room_width/2 - 150, room_height/2,"FIM, AU REVOIR CANARD!");
+  
+   }
 
 //Resetando
 draw_set_colour(-1);

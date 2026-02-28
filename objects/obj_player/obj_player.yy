@@ -10,6 +10,8 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_inimigo02","path":"objects/obj_inimigo02/obj_inimigo02.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_inimigo03__tiro","path":"objects/obj_inimigo03__tiro/obj_inimigo03__tiro.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_tiro_inimigo04","path":"objects/obj_tiro_inimigo04/obj_tiro_inimigo04.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_boss_ataque_01","path":"objects/obj_boss_ataque_01/obj_boss_ataque_01.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_boss_punho","path":"objects/obj_boss_punho/obj_boss_punho.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_player",

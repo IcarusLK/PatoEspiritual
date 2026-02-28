@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_menu",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":2,
+  "conversionMode":0,
+  "duration":25.260408,
+  "exportDir":"",
+  "name":"snd_menu",
+  "parent":{
+    "name":"Musicas",
+    "path":"folders/SOUNDS/Musicas.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_menu.mp3",
+  "volume":0.53,
+}

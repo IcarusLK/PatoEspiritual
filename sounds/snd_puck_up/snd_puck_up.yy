@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_puck_up",
   "parent":{
-    "name":"SOUNDS",
-    "path":"folders/SOUNDS.yy",
+    "name":"SFX",
+    "path":"folders/SOUNDS/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

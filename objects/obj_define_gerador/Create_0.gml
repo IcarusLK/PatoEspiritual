@@ -14,3 +14,11 @@ gerador1 = false;
 gerador2 = false;
 gerador3 = false;
 gerador4 = false;
+
+boss     = false;
+final    = 0;
+
+
+
+
+

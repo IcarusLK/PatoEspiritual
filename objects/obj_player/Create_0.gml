@@ -2,7 +2,7 @@
 
 #region variaveis 
 //iniciando variaveis de estados
-velocidade          = 2; 
+velocidade          = 3; 
 vida                = 3;
 meu_estado          = 0;
 indica_estado       = 0;

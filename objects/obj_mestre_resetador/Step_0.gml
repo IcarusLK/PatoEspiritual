@@ -27,6 +27,8 @@
 	  global.badge_fantasmao    = false;
       global.badge_boquinha     = false;
       global.badge_diamantinho  = false;
+	  
+	  global.boss               = false;
 	 
 	 room_restart();
 	 //Para de resetar o jogo mano

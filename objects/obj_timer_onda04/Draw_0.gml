@@ -22,8 +22,10 @@ draw_text(global.x_ui,global.y_ui + 40,timer);
 	
 	{   
 		draw_set_font(fnt_02_transicao);
-		draw_text(room_width / 2 - 150, room_height / 2," Proxima onda em ");
+		draw_text(room_width / 2 - 150, room_height / 2," BOSS VINDO EM");
 		draw_text(room_width / 2  - 70 , room_height / 2 + 20, timer_transicao);
+		
+		 draw_text(room_width / 2 - 110, room_height / 2 + 50, " ATAQUE + 2 ");
 		
 		 
 	};

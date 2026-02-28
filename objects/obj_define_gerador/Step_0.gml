@@ -38,4 +38,11 @@ if (global.fase1 and !gerador1)
 		gerador3      = false
    }
    
+   
+   if (global.fase5 and !boss)
+   {
+	   final = instance_create_layer(272,-127,"Inst_Inimigos",obj_Boss)
+	   boss = true; 
+	   
+   }
   
