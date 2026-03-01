@@ -8,6 +8,9 @@
 {
 	  var valor = 0.02
 	  timer -= valor
+	  
+	  //Para Debugg
+	  //timer -= 7
 	 
  };
  

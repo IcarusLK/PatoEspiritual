@@ -48,7 +48,10 @@ cursor_sprite = spr_mira;
   
   if (global.fase5)
   {
-	  global.playerdano = 8;
+	 global.playerdano = 8;
+	 
+	 //Para DEBUGG
+	 //global.playerdano = 150;
 	  
   }; 
  
@@ -77,6 +80,10 @@ cursor_sprite = spr_mira;
  if (image_alpha <= 0)
  {
 	  global.cutscene = true;
+	  
+	  
+	  //Voltando ao normal
+	  global.resetou = true; 
 	  
  }
   

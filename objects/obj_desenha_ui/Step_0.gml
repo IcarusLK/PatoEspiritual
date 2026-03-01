@@ -6,6 +6,7 @@
  if (global.fase1)
 {
 	onda_atual = 1;
+	
 
 };
 
